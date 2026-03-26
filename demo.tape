@@ -45,9 +45,5 @@ Sleep 1.5s
 Ctrl+T
 Sleep 1.5s
 
-# Copy query to clipboard
-Ctrl+Y
-Sleep 1.5s
-
 # Quit
 Ctrl+C
