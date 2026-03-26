@@ -10,11 +10,9 @@ Set Height 700
 Set Theme "Catppuccin Mocha"
 Set Padding 10
 
-# Prepend fake kubectl to PATH
-Set Env "PATH" "./demo:${PATH}"
-
 # Simulate piping kubectl output into yqp
-Type "kubectl get deployment web-frontend -n production -o yaml | yqp"
+# Uses the demo manifest directly — for the real kubectl version, record against a live cluster
+Type "./demo/kubectl | ./yqp"
 Sleep 500ms
 Enter
 Sleep 2s
