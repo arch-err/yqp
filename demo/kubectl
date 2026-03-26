@@ -1,0 +1,5 @@
+#!/bin/bash
+# Fake kubectl for demo GIF recording.
+# Ignores all args and outputs the demo YAML.
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+cat "${SCRIPT_DIR}/../demo.yaml"
