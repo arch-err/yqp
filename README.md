@@ -6,6 +6,8 @@ Write yq expressions interactively against YAML data with live results. Queries 
 
 Built with [mikefarah/yq](https://github.com/mikefarah/yq) under the hood. Forked from [noahgorstein/jqp](https://github.com/noahgorstein/jqp).
 
+<img alt="yqp demo" src="./demo.gif" width="1200" />
+
 ## Installation
 
 ### go install
