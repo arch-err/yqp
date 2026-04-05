@@ -42,6 +42,7 @@ func (b Bubble) Update(msg tea.Msg) (Bubble, tea.Cmd) {
 		b.hideStatusMessage()
 	case tea.WindowSizeMsg:
 		b.SetSize(msg.Width)
+	default:
 	}
 	return b, tea.Batch(cmd)
 }

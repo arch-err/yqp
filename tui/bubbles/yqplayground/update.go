@@ -50,7 +50,7 @@ func (b *Bubble) resizeBubbles() {
 	}
 }
 
-//nolint:revive
+//nolint:revive // cyclomatic complexity from message type switch is inherent to Bubbletea
 func (b *Bubble) handleMessage(msg tea.Msg, cmds *[]tea.Cmd) {
 	switch msg := msg.(type) {
 	case setupMsg:
@@ -147,7 +147,7 @@ func (b *Bubble) handleCtrlC(cmds *[]tea.Cmd) {
 	b.state = state.Query
 }
 
-//nolint:revive
+//nolint:revive // cyclomatic complexity from nested state transitions
 func (b *Bubble) handleTab() {
 	if b.state != state.Save {
 		if b.showInputPanel {
@@ -174,7 +174,7 @@ func (b *Bubble) handleTab() {
 	}
 }
 
-//nolint:revive
+//nolint:revive // cyclomatic complexity from nested state transitions
 func (b *Bubble) handleShiftTab() {
 	if b.state != state.Save {
 		if b.showInputPanel {
@@ -250,7 +250,7 @@ func (b *Bubble) updateState(prevState state.State, cmds *[]tea.Cmd) {
 	}
 }
 
-//nolint:revive
+//nolint:revive // cyclomatic complexity from state-based styling dispatch
 func (b *Bubble) updateActiveComponent(cmds *[]tea.Cmd) {
 	switch b.state {
 	case state.Query:

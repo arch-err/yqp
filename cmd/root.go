@@ -24,7 +24,7 @@ func init() {
 
 type discardWriter struct{}
 
-func (d *discardWriter) Write(p []byte) (int, error) { return len(p), nil }
+func (*discardWriter) Write(p []byte) (int, error) { return len(p), nil }
 
 var rootCmd = &cobra.Command{
 	Version: "0.1.0",
