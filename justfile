@@ -19,10 +19,6 @@ verify:
 # Run all checks (verify + lint + test)
 check: verify lint test
 
-# Generate the README demo GIF
-generate-gif: build
-    vhs demo.tape
-
 # Security audit
 audit:
     go vet ./...
@@ -35,4 +31,4 @@ install:
 
 # Clean build artifacts
 clean:
-    rm -f yqp demo.gif
+    rm -f yqp
