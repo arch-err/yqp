@@ -12,7 +12,7 @@ require (
 	github.com/charmbracelet/lipgloss v1.1.0
 	github.com/mikefarah/yq/v4 v4.45.4
 	github.com/muesli/termenv v0.16.0
-	github.com/spf13/cobra v1.10.1
+	github.com/spf13/cobra v1.10.2
 	github.com/spf13/viper v1.21.0
 	gopkg.in/op/go-logging.v1 v1.0.0-20160211212156-b2cb9fa56473
 	gopkg.in/yaml.v3 v3.0.1
